@@ -8,6 +8,11 @@ import { AppComponent } from './app.component';
 import 'hammerjs';
 import { MenuComponent } from './menu/menu.component';
 import { MatListModule } from '@angular/material/list';
+import {MatButtonModule} from '@angular/material/button';
+import {MatIconModule} from '@angular/material/icon';
+import {MatCardModule} from '@angular/material/card';
+import {MatGridListModule} from '@angular/material/grid-list';
+
 
 @NgModule({
   declarations: [
@@ -20,7 +25,12 @@ import { MatListModule } from '@angular/material/list';
     FlexLayoutModule,
     BrowserModule,
     AppRoutingModule,
-    MatListModule
+    MatListModule,
+    MatButtonModule,
+    MatIconModule,
+    MatCardModule,
+    MatGridListModule
+  
   ],
   providers: [],
   bootstrap: [AppComponent]
