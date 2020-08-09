@@ -13,6 +13,9 @@ import {MatIconModule} from '@angular/material/icon';
 import {MatCardModule} from '@angular/material/card';
 import {MatGridListModule} from '@angular/material/grid-list';
 import { DishdetailComponent } from './dishdetail/dishdetail.component';
+import { DishService } from './services/dish.service';
+import { HeaderComponent } from './header/header.component';
+import { FooterComponent } from './footer/footer.component';
 
 
 
@@ -21,7 +24,9 @@ import { DishdetailComponent } from './dishdetail/dishdetail.component';
   declarations: [
     AppComponent,
     MenuComponent,
-    DishdetailComponent
+    DishdetailComponent,
+    HeaderComponent,
+    FooterComponent
   ],
   imports: [
     BrowserAnimationsModule,
@@ -36,7 +41,7 @@ import { DishdetailComponent } from './dishdetail/dishdetail.component';
     MatGridListModule
   
   ],
-  providers: [],
+  providers: [DishService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
