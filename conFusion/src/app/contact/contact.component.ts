@@ -62,7 +62,7 @@ export class ContactComponent implements OnInit {
     });
     this.feedbackForm.valueChanges
     .subscribe(data => this.onValueChanged(data));
-  this.onValueChanged(); //
+  this.onValueChanged(); 
   }
 
   onValueChanged(data?: any) {
