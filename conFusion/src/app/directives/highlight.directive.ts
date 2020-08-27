@@ -9,13 +9,13 @@ export class HighlightDirective {
     private al : ElementRef,private render: Renderer2
   ) { }
 
-  @HostListener('mouseenter') onmouseenter() {
-  this.render.addClass(this.al.nativeElement,'hightlight'  );
+  @HostListener('mouseenter') onMousEnter() {
+  this.render.addClass(this.al.nativeElement,'highlight');
   }
 
-  @HostListener('mouseleave') onmouseleave () 
+  @HostListener('mouseleave') onMouseLeave () 
   {
-    this.render.removeClass(this.al.nativeElement,'hightlight'  );
+    this.render.removeClass(this.al.nativeElement,'highlight'  );
   }
 
 }
