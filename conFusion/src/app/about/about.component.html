@@ -59,7 +59,7 @@
 
     <div fxFlex >
         <h2>Corporate Leadership</h2>
-        <mat-list class="margin" *ngIf="leaders">
+        <mat-list class="margin" *ngIf="leaders" [@expand]> 
             <mat-list-item *ngFor="let leader of leaders">
                 <mat-icon mat-list-icon>
                     <img mat-card-avatar class="example-header-image" height="200px" src={{leader.image}}
