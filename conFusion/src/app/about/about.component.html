@@ -62,7 +62,7 @@
         <mat-list class="margin" *ngIf="leaders" [@expand]> 
             <mat-list-item *ngFor="let leader of leaders">
                 <mat-icon mat-list-icon>
-                    <img mat-card-avatar class="example-header-image" height="200px" src={{leader.image}}
+                    <img mat-card-avatar class="example-header-image" height="200px" src="{{BaseURL +leader.image}}"
                         alt={{leader.name}}>
                 </mat-icon>
                 <div mat-line>{{leader.name}} {{leader.abbr}}</div>
